@@ -2,8 +2,18 @@ package Chapter06;
 
 import java.util.Scanner;
 
+/**
+ * Checks validity of a password
+ *
+ * @author Yorke Ferrell
+ */
 public class C6_1 {
 
+    /**
+     * Main method
+     *
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your password: ");
@@ -12,6 +22,12 @@ public class C6_1 {
         System.out.println(isValid(password) ? "Valid Password" : "Invalid Password");
     }
 
+    /**
+     * Password validity checker
+     *
+     * @param password the passphrase being validated
+     * @return whether or not the password is valid
+     */
     public static boolean isValid(String password) {
         // Atleast 8 characters
         if (password.length() < 8) {

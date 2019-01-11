@@ -2,8 +2,18 @@ package Chapter06;
 
 import java.util.Scanner;
 
+/**
+ * Converts various currency
+ *
+ * @author Yorke Ferrell
+ */
 public class P6 {
 
+    /**
+     * Main Method
+     *
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Euro Rate: ");
@@ -41,6 +51,14 @@ public class P6 {
 
     }
 
+    /**
+     * Converts the specified currency
+     *
+     * @param dollars the input of US currency
+     * @param exchangeRate the exchange rate between dollars and the currency
+     * selected
+     * @return returns the exchanged value
+     */
     public static double convert(double dollars, double exchangeRate) {
         if (dollars > 100) {
             return 0.95 * dollars * exchangeRate;
