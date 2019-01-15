@@ -2,8 +2,18 @@ package Chapter05;
 
 import java.util.Scanner;
 
+/**
+ * Tallies "Yes" and "No" votes
+ *
+ * @author Yorke Ferrell
+ */
 public class P5 {
 
+    /**
+     * Main method
+     *
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String vote = "";
